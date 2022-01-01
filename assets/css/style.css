@@ -1,0 +1,43 @@
+/** Navbar **/
+.navbar-header{
+    background-color: rgba(252, 236, 215, 0.938);
+    font-size: large;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/** index page **/
+
+
+/** index page **/
+
+
+/** index page **/
+
+
+/** index page **/
+
+
+/** index page **/
+
+
+/** index page **/
+
+
+/** hero image **/
+ .hero-image{
+     background-image: url("../images/recyclem8-hero-image.jpeg");
+     background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+ }
+
+ #hero .container{
+     min-height: 150vh;
+     min-width: 50vw;
+     max-width: 100vw;
+     max-height: 300vh;
+ }
+
+/** index page **/
