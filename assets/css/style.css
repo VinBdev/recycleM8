@@ -1,9 +1,15 @@
 /** Navbar **/
+
 .navbar-header{
-    background-color: rgba(252, 236, 215, 0.938);
-    font-size: large;
-    font-weight: bold;
-    font-style: italic;
+    background-color: rgba(206, 206, 194, 0.664);
+}
+
+.about{ 
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 700;
+    font-style: italic; 
+    margin-top: 256px;
 }
 
 
@@ -29,6 +35,7 @@
  .hero-image{
      background-image: url("../images/recyclem8-hero-image.jpeg");
      background-size: cover;
+     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
  }
