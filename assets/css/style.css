@@ -17,8 +17,7 @@
 }
 
 .get-started{
-    background-color: red;
-    text-color: black;
+    background-color: red; 
 }
 
 .container-about{
@@ -33,9 +32,21 @@
     background-color: whitesmoke;
     opacity: 0.6; 
 }
-
-/** index page **/
-
+ 
+ /* Footer */
+ footer {
+    height: 150px;
+}
+/* social links */
+.social-networks {
+    text-align: center;    
+    font-size: 3rem;
+    display: inline;
+    font-size: 1rem;
+    margin: 1%;
+    padding: 5%;
+    color: #777777;
+}
 
 /** index page **/
 
