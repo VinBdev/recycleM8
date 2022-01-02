@@ -2,19 +2,34 @@
 
 .navbar-header{
     background-color: rgba(206, 206, 194, 0.664);
+    font-size: large;
+    font-style: italic;
+    text-decoration: underline;
+    
 }
 
 .about{ 
     justify-content: center;
-    font-size: 40px;
-    font-weight: 700;
+    font-size: 60px; 
     font-style: italic; 
+    font-weight: bolder;
     margin-top: 256px;
 }
 
 
-/** index page **/
 
+.container-about{
+    background-color: white;
+    opacity: 0.6; 
+    padding-top: 0rem;
+}
+
+/** Section1 **/
+.section-1{
+    padding-bottom: 3rem;
+    background-color: whitesmoke;
+    opacity: 0.6; 
+}
 
 /** index page **/
 
@@ -37,14 +52,12 @@
      background-size: cover;
      background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed;
+    background-attachment: fixed; 
+    padding-bottom: 100px;
  }
 
- #hero .container{
-     min-height: 150vh;
-     min-width: 50vw;
-     max-width: 100vw;
-     max-height: 300vh;
- }
+
+ .container-small{
+height:min-content }
 
 /** index page **/
