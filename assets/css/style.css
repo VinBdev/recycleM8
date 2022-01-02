@@ -16,12 +16,15 @@
     margin-top: 256px;
 }
 
-
+.get-started{
+    background-color: red;
+    text-color: black;
+}
 
 .container-about{
     background-color: white;
     opacity: 0.6; 
-    padding-top: 0rem;
+    padding-top: 3rem;
 }
 
 /** Section1 **/
