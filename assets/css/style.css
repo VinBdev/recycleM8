@@ -31,6 +31,7 @@
     padding-bottom: 3rem;
     background-color: whitesmoke;
     opacity: 0.6; 
+    background-blend-mode: color-burn;
 }
  
  /* Footer */
@@ -74,4 +75,11 @@
  .container-small{
 height:min-content }
 
-/** index page **/
+/** Contact page **/
+
+/** Form **/
+.contact-form gap {
+    padding-top: 3500px;
+    margin-top: 0 ;
+    max-width: 70%;
+}
