@@ -2,7 +2,7 @@ function sendMail(contactForm) {
     emailjs.send("service_fuvx6ut", "RecycleM8", {
         "from_name": contactForm.name.value,
         "from_email": contactForm.emailaddress.value,
-        "project_request": contactForm.message.value
+        "message": contactForm.message.value
     })
     .then(
         function(response) {
