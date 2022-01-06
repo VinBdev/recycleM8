@@ -45,44 +45,44 @@
         <h1 class="about container-about">Below are the most common recylcing symbols found on waste:</h1>
         <div class="text-dark row center">
           <div class="col-sm-4 container-about"> 
-          <h2>Who is Recycle M8?</h2>
+          <h2>Symbol 1</h2>
           <p>RecycleM8 was founded by a group of environmentalists who are committed to making a more stable and safe enviornment by bringing practical habitual changes to how humans dispose of waste.</p>
           </div>
           <div class="col-sm-4 container-about">
-            <h2>Why is Recycle M8 here?</h2>
+            <h2>Symbol 2</h2>
           <p>RecycleM8's purpose is to show and educate any citizen trying to educate themselves or others about various types of waste and how to effectively dipose of this waste,</p>
           </div>
           <div class="col-sm-4 container-about">
-          <h2>How old is Recycle M8?</h2>
+          <h2>Symbol 3</h2>
           <p>We are a brand new non-profit organisation that actively encourages every single person to contribute in anyway possibe.</p>
           </div>
           </div>
  
             <div class="text-dark row center">
               <div class="col-sm-4 container-about"> 
-              <h2>Who is Recycle M8?</h2>
+              <h2>Symbol 4</h2>
               <p>RecycleM8 was founded by a group of environmentalists who are committed to making a more stable and safe enviornment by bringing practical habitual changes to how humans dispose of waste.</p>
               </div>
               <div class="col-sm-4 container-about">
-                <h2>Why is Recycle M8 here?</h2>
+                <h2>Symbol 5</h2>
               <p>RecycleM8's purpose is to show and educate any citizen trying to educate themselves or others about various types of waste and how to effectively dipose of this waste,</p>
               </div>
               <div class="col-sm-4 container-about">
-              <h2>How old is Recycle M8?</h2>
+              <h2>Symbol 6</h2>
               <p>We are a brand new non-profit organisation that actively encourages every single person to contribute in anyway possibe.</p>
               </div>
               </div> 
                 <div class="text-dark row center">
                   <div class="col-sm-4  container-about"> 
-                  <h2>Who is Recycle M8?</h2>
+                  <h2>Symbol 7</h2>
                   <p>RecycleM8 was founded by a group of environmentalists who are committed to making a more stable and safe enviornment by bringing practical habitual changes to how humans dispose of waste.</p>
                   </div>
                   <div class="col-sm-4 container-about">
-                    <h2>Why is Recycle M8 here?</h2>
+                    <h2>Symbol 8</h2>
                   <p>RecycleM8's purpose is to show and educate any citizen trying to educate themselves or others about various types of waste and how to effectively dipose of this waste,</p>
                   </div>
                   <div class="col-sm-4 container-about">
-                  <h2>How old is Recycle M8?</h2>
+                  <h2>Symbol 9</h2>
                   <p>We are a brand new non-profit organisation that actively encourages every single person to contribute in anyway possibe.</p>
                   </div>
                   </div>
@@ -98,9 +98,10 @@
         <div class="text-dark row center">
           <div class="col-lg-12  ">
             <div class="container-about">
-          <h2>Who is Recycle M8?</h2>
+          <h2>Use the maps below to find a recycling centre in your area!</h2>
           <p>RecycleM8 was founded by a group of environmentalists who are committed to making a more stable and safe enviornment by bringing practical habitual changes to how humans dispose of waste.</p>
           </div> 
+          <div class="map"></div>
       </div>
       </div>
       </div>
@@ -115,6 +116,23 @@
        </ul>
         <p>This project was made for educational and assement purposes only.</p>
       </footer>
+      <script>
+        function initMap(){
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 3,
+          center: {
+            lat: 46.456789,
+            lng: -33.456789
+          }
+        });
+      }
+      </script>
+      <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js">
+        const markerCluster = new markerClusterer.MarkerClusterer({ map, markers });
+      </script>
+      <script async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzQ5-uYeW2PDVqkB3077r9I1ZXUOWECI4&callback=initMap">
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
   </script>
