@@ -34,6 +34,11 @@
     background-blend-mode: color-burn;
 }
  
+.bg-light {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
+    border-bottom: 5px solid #3FA646;
+}
  /* Footer */
  footer {
     height: 50px; 
