@@ -20,6 +20,12 @@
     background-color: red; 
 }
 
+.bg-light {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
+    border-bottom: 5px solid #3FA646;
+}
+
 .container-about{
     background-color: white;
     opacity: 0.6; 
@@ -34,11 +40,7 @@
     background-blend-mode: color-burn;
 }
  
-.bg-light {
-    --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
-    border-bottom: 5px solid #3FA646;
-}
+
  /* Footer */
  footer {
     height: 50px; 
@@ -58,11 +60,25 @@
 
 
 /** map **/
-div#map {min-height: 360px;}
-
+#map {
+    height: 100%;
+  }
+  
+  /* Optional: Makes the sample page fill the window. */
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
 
 /** index page **/
-
+.symbol-1{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
 
 /** index page **/
 
