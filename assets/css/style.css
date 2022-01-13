@@ -74,9 +74,10 @@
   
 
 /** index page **/
-.symbol{
+img, svg {
+    vertical-align: middle;
     height: 100px;
-    width: 100px; 
+    width: 100px;
 }
 
 /** index page **/
