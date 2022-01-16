@@ -44,7 +44,7 @@
     <div class="w-100 hero-image d-flex justify-content-center align-items-center">
       <div class="container text-center">
       
-        <h1 class="about container-about">Below are the most common recylcing symbols found on waste:</h1>
+        <h1 class="about container-about">Common recylcing symbols found on waste:</h1>
         <div class="text-dark row center">
           <div class="col-sm-4 container-about"> 
           <h2 class="symbol"><img src="assets/images/aluminium.jpg" class="symbol-1" alt="aluminium recycling symbol"> </h2>
@@ -103,7 +103,8 @@
           <p>RecycleM8 was founded by a group of environmentalists who are committed to making a more stable and safe enviornment by bringing practical habitual changes to how humans dispose of waste.</p>
           </div> 
            </div>
-      <div id="map"></div>
+      <div class="row" id="map"></div>
+      <div class="row" id="locations-container"></div>
 
       </div>
       </div>
@@ -117,18 +118,11 @@
           <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram" aria-hidden="true">Instagram</i></a></li>
        </ul>
         <p>This project was made for educational and assement purposes only.</p>
-      </footer>
-      <script>
-        var map;
-        function initMap() {
-          map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: -34.397, lng: 150.644},
-            zoom: 8
-          });
-        }
-      </script>
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzQ5-uYeW2PDVqkB3077r9I1ZXUOWECI4&callback=initMap"
-      async defer></script>
+      </footer> 
+        
+      <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgwtnnq6nbCf4F36kxOLYpT_nfCMJBiNE&callback=initMap"></script>
+      <script src="assets/js/maps.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
   </script>

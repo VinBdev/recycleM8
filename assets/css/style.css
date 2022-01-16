@@ -61,7 +61,60 @@
 
 /** map **/
 #map {
-    height: 100px;
+    width: 100%;
+    height: 600px;
+    margin-top: 100px;
+  }
+  
+  locations-container {
+    width: 100%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .location {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    padding: 10px;
+    border: 0.5px solid #999;
+    margin: 10px;
+  }
+  
+  .location img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .location h3 {
+    position: absolute;
+    left: 0;
+    top: 190px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+    z-index: 100;
+  }
+  
+  .location .description {
+    margin-top: 230px;
+    padding: 10px;
+  }
+  
+  .location a {
+    text-decoration: underline;
+    color: blue;
+    margin: 5px auto;
+    display: block;
+    text-align: center;
+    cursor: pointer;
   }
   
   /* Optional: Makes the sample page fill the window. */
