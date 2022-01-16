@@ -5,22 +5,23 @@ const places = [
         coordinates: {lat:35.4567898764567, lng: -121.67890654323 },
         description: "This is a paper recycling center"
     },
-
+    {
     name: "Bottle Bank ",
     imageLink: "https://unsplash.com/photos/5bRisdbx-8U",
     coordinates: {lat:35.4567898764567, lng: -121.67890654323 },
     description: "This is a paper recycling center"
 },
+{
 
 name: "Clothes Recycling Center",
 imageLink: "https://unsplash.com/photos/oa7pqZmmhuA",
 coordinates: {lat:35.4567898764567, lng: -121.67890654323 },
 description: "This is a paper recycling center"
-];
+}];
 
 
-var map;
-const recyclingContainer = document.getElementById("recycling-container");
+let map;
+const locationsContainer = document.getElementById("recycling-container");
 
 
         function initMap() {
@@ -30,12 +31,13 @@ const recyclingContainer = document.getElementById("recycling-container");
             
           });
         for (let i = 0; i < places.length; i++) {
-            let place = places[i]
+            let place = places[i];
             const marker = new google.maps.Marker({
                 position: place.coordinates,
                 map: map,
                 title: place.name
             });
+/*jshint esversion: 6 */
 
             let infoWindowRecyclingString =`
             <div class="info-window">
@@ -48,19 +50,20 @@ const recyclingContainer = document.getElementById("recycling-container");
             `;
         
             const infoWindow = new google.maps.infoWindow({
+                content: infoWindowRecyclingString
             });
 
             marker.addListener("click", () => {
-                infowindow.open{{
+                infoWindow.open;{
                     anchor: marker,
-                    map,
-                }};
+                    map;
+                }
             });
         }
     }
     function showLocations() {
         for (let i = 0; i < places.length; i++) {
-            let place = places[i]
+            let place = places[i];
             let locationHTML = `
             <div class="location" id="locations-${i}">
                 <h3>${place.name}</h3>
@@ -72,18 +75,18 @@ const recyclingContainer = document.getElementById("recycling-container");
                 <br>
 
                 <a onclick="goToPlaceOnMap(${i})">Find on Map</a>
-            </div>`
+            </div>`;
 
-            locationsContainer.innerHTML += locationsHTML
+            locationsContainer.innerHTML += locationsHTML;
         }
     }
 
     function goToPlaceOnMap(placeId) {
-        let place = places[placeId]
-        location.href = "#map"
+        let place = places[placeId];
+        location.href = "#map";
 
-        map.setCenter(place.coordinates)
-        map.setZoom(18)
+        map.setCenter(place.coordinates);
+        map.setZoom(18);
     }
 
-    showLocations()
+    showLocations();
