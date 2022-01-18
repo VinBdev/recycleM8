@@ -1,20 +1,50 @@
 const places = [
     {
-        name: "Recycling Center",
-        imageLink: "https://www.pexels.com/photo/city-road-sunny-street-4124936/",
+        name: "Paper and Plastic Recycling Center",
+        imageLink: "assets/images/recycle-center-img.jpg",
         coordinates: {lat:35.4567898764567, lng: -121.67890654323 },
         description: "This is a paper recycling center"
     },
     {
-    name: "Bottle Bank ",
-    imageLink: "https://unsplash.com/photos/5bRisdbx-8U",
-    coordinates: {lat:35.4567898764567, lng: -121.67890654323 },
-    description: "This is a paper recycling center"
-},
+        name: "Clothes Bank",
+        imageLink: "assets/images/clothes-center-img.jpg",
+        coordinates: {lat:35.4567898764567, lng: -121.67890654323 },
+        description: "This is a paper recycling center"
+    },
+    {
+        name: "Glass Bottle Bank",
+        imageLink: "assets/images/glass-center-img.jpg",
+        coordinates: {lat:35.4567898764567, lng: -121.67890654323 },
+        description: "This is a paper recycling center"
+    },
+    {
+        name: "Paper and Plastic Recycling Center",
+        imageLink: "assets/images/recycle-center-img.jpg",
+        coordinates: {lat:35.4567898764567, lng: -121.67890654323 },
+        description: "This is a paper and plastic recycling center"
+    },
+    {
+        name: "Clothes Bank",
+        imageLink: "assets/images/clothes-center-img.jpg",
+        coordinates: {lat:35.4567898764567, lng: -121.67890654323 },
+        description: "This is a paper recycling center"
+    },
+    {
+        name: "Glass Bottle Bank",
+        imageLink: "assets/images/glass-center-img.jpg",
+        coordinates: {lat:35.4567898764567, lng: -121.67890654323 },
+        description: "This is a paper recycling center"
+    },
+    {
+        name: "Paper and Plastic Recycling Center",
+        imageLink: "assets/images/recycle-center-img.jpg",
+        coordinates: {lat:35.4567898764567, lng: -121.67890654323 },
+        description: "This is a paper recycling center"
+    },
 {
 
 name: "Clothes Recycling Center",
-imageLink: "https://unsplash.com/photos/oa7pqZmmhuA",
+imageLink: "assets/images/clothes-center-img.jpg",
 coordinates: {lat:35.4567898764567, lng: -121.67890654323 },
 description: "This is a paper recycling center"
 }];
@@ -49,7 +79,7 @@ const locationsContainer = document.getElementById("recycling-container");
             </div>
             `;
         
-            const infoWindow = new google.maps.infoWindow({
+            const infoWindow = new google.maps.InfoWindow({
                 content: infoWindowRecyclingString
             });
 
@@ -77,7 +107,7 @@ const locationsContainer = document.getElementById("recycling-container");
                 <a onclick="goToPlaceOnMap(${i})">Find on Map</a>
             </div>`;
 
-            locationsContainer.innerHTML += locationsHTML;
+            locationsContainer.innerHTML += locationHTML;
         }
     }
 

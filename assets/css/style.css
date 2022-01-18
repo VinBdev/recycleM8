@@ -1,59 +1,59 @@
 /** Navbar **/
 
 .navbar-header{
-    background-color: rgba(206, 206, 194, 0.664);
-    font-size: large;
-    font-style: italic;
-    text-decoration: underline;
-    
+  background-color: rgba(206, 206, 194, 0.664);
+  font-size: large;
+  font-style: italic;
+  text-decoration: underline;
+  
 }
 
 .about{ 
-    justify-content: center;
-    font-size: 60px; 
-    font-style: italic; 
-    font-weight: bolder;
-    margin-top: 256px;
+  justify-content: center;
+  font-size: 60px; 
+  font-style: italic; 
+  font-weight: bolder;
+  margin-top: 256px;
 }
 
 .get-started{
-    background-color: red; 
+  background-color: red; 
 }
 
 .bg-light {
-    --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
-    border-bottom: 5px solid #3FA646;
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
+  border-bottom: 5px solid #3FA646;
 }
 
 .container-about{
-    background-color: white;
-    opacity: 0.9; 
-    padding-top: 3rem; 
+  background-color: white;
+  opacity: 0.9; 
+  padding-top: 3rem; 
 }
 
 /** Section1 **/
 .section-1{
-    padding-bottom: 3rem;
-    background-color: whitesmoke;
-    opacity: 0.9; 
-    background-blend-mode: color-burn;
+  padding-bottom: 3rem;
+  background-color: whitesmoke;
+  opacity: 0.9; 
+  background-blend-mode: color-burn;
 }
- 
 
- /* Footer */
- footer {
-    height: 50px; 
+
+/* Footer */
+footer {
+  height: 50px; 
 }
 /* social links */
 .social-networks {
-    text-align: center;    
-    font-size: 3rem;
-    display: inline;
-    font-size: 1rem;
-    margin: 1%;
-    padding: 5%;
-    color: #777777;
+  text-align: center;    
+  font-size: 3rem;
+  display: inline;
+  font-size: 1rem;
+  margin: 1%;
+  padding: 5%;
+  color: #777777;
 }
 
 /** index page **/
@@ -61,100 +61,103 @@
 
 /** map **/
 #map {
-    width: 100%;
-    height: 600px;
-    margin-top: 100px;
-  }
-  
-  locations-container {
-    width: 100%;
-    margin: 30px auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  
-  .location {
-    position: relative;
-    width: 300px;
-    height: 500px;
-    padding: 10px;
-    border: 0.5px solid #999;
-    margin: 10px;
-  }
-  
-  .location img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .location h3 {
-    position: absolute;
-    left: 0;
-    top: 190px;
-    width: 100%;
-    text-align: center;
-    font-size: 20px;
-    color: #333;
-    z-index: 100;
-  }
-  
-  .location .description {
-    margin-top: 230px;
-    padding: 10px;
-  }
-  
-  .location a {
-    text-decoration: underline;
-    color: blue;
-    margin: 5px auto;
-    display: block;
-    text-align: center;
-    cursor: pointer;
-  }
-  
-  /* Optional: Makes the sample page fill the window. */
-  html,
-  body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  
+  width: 100%;
+  height: 600px;
+  margin-top: 100px;
+}
+
+#recycling-container {
+  width: 100%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.location {
+  position: relative;
+  width: 300px;
+  height: 500px;
+  padding: 10px;
+  border: 0.5px solid #999;
+  margin: 10px;
+}
+
+.location img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.location h3 {
+  position: absolute;
+  left: 0;
+  top: 200px;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  color: #333;
+  z-index: 100;
+}
+
+.location .description {
+  margin-top: 230px;
+  padding: 10px;
+}
+
+.location a {
+  text-decoration: underline;
+  color: blue;
+  margin: 5px auto;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+
+ 
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 
 /** index page **/
 img, svg {
-    vertical-align: middle;
-    height: 100px;
-    width: 100px;
+  vertical-align: middle;
+  height: 100px;
+  width: 100px;
 }
 
 /** index page **/
 
 
 /** hero image **/
- .hero-image{
-     background-image: url("../images/recyclem8-hero-image.jpeg");
-     background-size: cover;
-     background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed; 
-    padding-bottom: 100px;
- }
+.hero-image{
+   background-image: url("../images/recyclem8-hero-image.jpeg");
+   background-size: cover;
+   background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed; 
+  padding-bottom: 100px;
+}
 
 
- .container-small{
+.container-small{
 height:min-content }
 
 /** Contact page **/
 
 /** Form **/
 .contact-form gap {
-    padding-top: 3500px;
-    margin-top: 0 ;
-    max-width: 70%;
+  padding-top: 3500px;
+  margin-top: 0 ;
+  max-width: 70%;
 }
