@@ -2,50 +2,50 @@ const places = [
     {
         name: "Paper and Plastic Recycling Center",
         imageLink: "assets/images/recycle-center-img.jpg",
-        coordinates: {lat:35.4567898764567, lng: -121.67890654323 },
+        coordinates: {lat:53.34768383192905, lng: -6.267762270955096 },
         description: "This is a paper recycling center"
     },
     {
         name: "Clothes Bank",
         imageLink: "assets/images/clothes-center-img.jpg",
-        coordinates: {lat:35.4567898764567, lng: -121.67890654323 },
+        coordinates: {lat:53.34768383192905, lng: -6.267762270955096 },
         description: "This is a paper recycling center"
     },
     {
         name: "Glass Bottle Bank",
         imageLink: "assets/images/glass-center-img.jpg",
-        coordinates: {lat:35.4567898764567, lng: -121.67890654323 },
+        coordinates: {lat:53.34768383192905, lng: -6.267762270955096 },
         description: "This is a paper recycling center"
     },
     {
         name: "Paper and Plastic Recycling Center",
         imageLink: "assets/images/recycle-center-img.jpg",
-        coordinates: {lat:35.4567898764567, lng: -121.67890654323 },
+        coordinates: {lat:53.34768383192905, lng: -6.267762270955096 },
         description: "This is a paper and plastic recycling center"
     },
     {
         name: "Clothes Bank",
         imageLink: "assets/images/clothes-center-img.jpg",
-        coordinates: {lat:35.4567898764567, lng: -121.67890654323 },
+        coordinates: {lat:53.34768383192905, lng: -6.267762270955096 },
         description: "This is a paper recycling center"
     },
     {
         name: "Glass Bottle Bank",
         imageLink: "assets/images/glass-center-img.jpg",
-        coordinates: {lat:35.4567898764567, lng: -121.67890654323 },
+        coordinates: {lat:53.34768383192905, lng: -6.267762270955096 },
         description: "This is a paper recycling center"
     },
     {
         name: "Paper and Plastic Recycling Center",
         imageLink: "assets/images/recycle-center-img.jpg",
-        coordinates: {lat:35.4567898764567, lng: -121.67890654323 },
+        coordinates: {lat:53.34768383192905, lng: -6.267762270955096 },
         description: "This is a paper recycling center"
     },
 {
 
 name: "Clothes Recycling Center",
 imageLink: "assets/images/clothes-center-img.jpg",
-coordinates: {lat:35.4567898764567, lng: -121.67890654323 },
+coordinates: {lat:53.34768383192905, lng: -6.267762270955096 },
 description: "This is a paper recycling center"
 }];
 
