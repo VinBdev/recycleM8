@@ -29,7 +29,7 @@
 .container-about{
   background-color: white;
   opacity: 0.9; 
-  padding-top: 3rem; 
+  padding-top: 10px; 
 }
 
 /** Section1 **/
@@ -43,7 +43,21 @@
 
 /* Footer */
 footer {
-  height: 50px; 
+  height: 150px;
+}
+/* social links */
+.social-networks {
+  text-align: center;    
+  font-size: 3rem;
+}
+.social-networks li {
+  display: inline;
+}
+.social-networks i {
+  font-size: 3rem;
+  margin: 1%;
+  padding: 5%;
+  color: #777777;
 }
 /* social links */
 .social-networks {
