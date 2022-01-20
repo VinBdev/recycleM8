@@ -1,8 +1,8 @@
 const places = [
     {
-        name: "Paper and Plastic Recycling Center",
+        name: "Northside Recycling Center",
         imageLink: "assets/images/recycle-center-img.jpg",
-        coordinates: {lat:53.34768383192905, lng: -6.267762270955096 },
+        coordinates: {lat: 53.36111228016031, lng:  -6.24404138890759 },
         description: "This is a paper recycling center"
     },
     {
@@ -56,7 +56,7 @@ const locationsContainer = document.getElementById("recycling-container");
 
         function initMap() {
           map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: -34.397, lng: 150.644},
+            center: {lat:53.34768383192905, lng: -6.267762270955096},
             zoom: 3,
             
           });

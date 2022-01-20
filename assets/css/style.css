@@ -41,34 +41,25 @@
 }
 
 
-/* Footer */
-footer {
-  height: 15px;
+ /* Footer */
+ footer {
+  height: 50px;
 }
 /* social links */
 .social-networks {
   text-align: center;    
-  font-size: 2rem;
+  font-size: 3rem;
+  color: white;
+  
 }
 .social-networks li {
   display: inline;
+  background-color: rgb(2, 121, 8);
+  opacity: 0.9;
 }
-.social-networks i {
-  font-size: 2rem;
-  margin: 1%;
-  padding: 5%;
-  color: #777777;
+a{
+  color: white;
 }
-/* social links */
-.social-networks {
-  text-align: center;    
-  font-size: 2rem;
-  display: inline; 
-  margin: 1%;
-  padding: 5%;
-  color: #777777;
-}
-
 /** index page **/
 
 
@@ -132,14 +123,7 @@ footer {
 }
 
  
-
-/* Optional: Makes the sample page fill the window. */
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
+ 
 
 
 /** index page **/
@@ -159,7 +143,7 @@ img, svg {
    background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed; 
-  padding-bottom: 100px;
+  padding-bottom: 10px;
 }
 
 
