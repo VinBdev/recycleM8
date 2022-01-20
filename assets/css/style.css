@@ -43,18 +43,18 @@
 
 /* Footer */
 footer {
-  height: 150px;
+  height: 15px;
 }
 /* social links */
 .social-networks {
   text-align: center;    
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .social-networks li {
   display: inline;
 }
 .social-networks i {
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 1%;
   padding: 5%;
   color: #777777;
@@ -62,9 +62,8 @@ footer {
 /* social links */
 .social-networks {
   text-align: center;    
-  font-size: 3rem;
-  display: inline;
-  font-size: 1rem;
+  font-size: 2rem;
+  display: inline; 
   margin: 1%;
   padding: 5%;
   color: #777777;
