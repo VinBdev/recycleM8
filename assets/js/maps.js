@@ -1,52 +1,52 @@
 const places = [
     {
-        name: "Northside Recycling Center",
+        name: "Northside recycling Ltd",
         imageLink: "assets/images/recycle-center-img.jpg",
-        coordinates: {lat: 53.36111228016031, lng:  -6.24404138890759 },
-        description: "This is a paper recycling center"
+        coordinates: {lat: 53.39743296428285, lng:-6.191854013974559 },
+        description: "This is waste disposal company specialising in recycled goods. There are several waste specialists across Dublin, they focus on getting the most out of waste material by recycling the majority of an item but responsibly removing the rest."
     },
     {
-        name: "Clothes Bank",
+        name: "North Dublin Clothes Bank",
         imageLink: "assets/images/clothes-center-img.jpg",
-        coordinates: {lat:53.34768383192905, lng: -6.267762270955096 },
-        description: "This is a paper recycling center"
+        coordinates: {lat: 53.45850637555919, lng:  -6.189073059448463 },
+        description: "This Northside recycling center is situated in Seatown east beside the Malahide rugby club. It is most commonly used for recycling old clothes which will be collected and recycled into new clothing or for textile reuse "
     },
     {
-        name: "Glass Bottle Bank",
+        name: "Bottle Bank - Eastwall",
         imageLink: "assets/images/glass-center-img.jpg",
-        coordinates: {lat:53.34768383192905, lng: -6.267762270955096 },
-        description: "This is a paper recycling center"
+        coordinates: {lat: 53.35064202981545,  lng: -6.234333856779967 },
+        description: "This is a glass bottle bank and recycling center located just off Sheriff street Upper on the East Rd. This is one of many glass bottle banks in the greater Dublin area. These bottle banks usually facilitate for green, brown and clear bottles. "
     },
     {
-        name: "Paper and Plastic Recycling Center",
-        imageLink: "assets/images/recycle-center-img.jpg",
-        coordinates: {lat:53.34768383192905, lng: -6.267762270955096 },
-        description: "This is a paper and plastic recycling center"
+        name: "Ringsend Recycling Center",
+        imageLink: "assets/images/paper-recycling.jpg",
+        coordinates: {lat:53.34174855288023,  lng: -6.214332297535924 },
+        description: "The Ringsend recycling Center has a very good name for responsible recycling, waste management and customer service. Although this is not a free service, they have impecible reviews and a loyal local customer base. "
     },
     {
-        name: "Clothes Bank",
-        imageLink: "assets/images/clothes-center-img.jpg",
-        coordinates: {lat:53.34768383192905, lng: -6.267762270955096 },
-        description: "This is a paper recycling center"
+        name: "Southside Clothes Bank",
+        imageLink: "assets/images/old-clothes-2.jpg",
+        coordinates: {lat: 53.28848262870961,  lng: -6.154683493193059 },
+        description: "Located in Monkstown, Bring Backs is an amazing example of how easy it can be for communities to designate an area for all waste materials in a responsible and sanitary way. This is a full collection point for glass and clothing items. "
     },
     {
-        name: "Glass Bottle Bank",
-        imageLink: "assets/images/glass-center-img.jpg",
-        coordinates: {lat:53.34768383192905, lng: -6.267762270955096 },
-        description: "This is a paper recycling center"
+        name: "S.D.C.C Recycling Center",
+        imageLink: "assets/images/glass-bottle-2.jpg",
+        coordinates: {lat:53.30953220356517, lng:-6.346409280718422},
+        description: "This is the South Dublin County Council Recycling Ceter. Similiar to the Ringsend Recycling center this is a multi-purpose waste management facility with excellent reviews and recommendations from locals. Disposal of small items is free."
     },
     {
-        name: "Paper and Plastic Recycling Center",
-        imageLink: "assets/images/recycle-center-img.jpg",
-        coordinates: {lat:53.34768383192905, lng: -6.267762270955096 },
-        description: "This is a paper recycling center"
+        name: "Coolmine Recycling Center",
+        imageLink: "assets/images/paper-recycling-2.jpg",
+        coordinates: {lat: 53.38441913987859,  lng: -6.396209535994277 },
+        description: "The Coolmine recycling center is a classic example of a paper and plastic based recycling center. There are two very large purple containers at the back side of a car park. This is located in a large residential area with easy access."
     },
 {
 
-name: "Clothes Recycling Center",
-imageLink: "assets/images/clothes-center-img.jpg",
-coordinates: {lat:53.34768383192905, lng: -6.267762270955096 },
-description: "This is a paper recycling center"
+name: "Bottle Recycling Center",
+imageLink: "assets/images/glass-bottle-1.jpg",
+coordinates: {lat:53.31209788670306, lng: -6.2827682652981025 },
+description: "This is glass bottle recycling center located in the center of Terenure, Rathgar and Kimmage. This too contains waste facilitie for green, brown and transparent glass bottles. All waste must be cleaned before using the bins."
 }];
 
 
@@ -57,7 +57,7 @@ const locationsContainer = document.getElementById("recycling-container");
         function initMap() {
           map = new google.maps.Map(document.getElementById('map'), {
             center: {lat:53.34768383192905, lng: -6.267762270955096},
-            zoom: 3,
+            zoom: 10,
             
           });
         for (let i = 0; i < places.length; i++) {
@@ -116,7 +116,7 @@ const locationsContainer = document.getElementById("recycling-container");
         location.href = "#map";
 
         map.setCenter(place.coordinates);
-        map.setZoom(18);
+        map.setZoom(17);
     }
 
     showLocations();
