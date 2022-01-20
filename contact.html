@@ -14,7 +14,7 @@
             emailjs.init("user_KYznVmNADQLVi9aOddshU");
         })();
     </script>
-    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script type="text/javascript"> (function(){
@@ -73,6 +73,8 @@
 
     <section class="container-fluid hero-image section 1">
       <div class="row bg-color-contact container-about">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
           <div>
               <h3 class="contact-heading uppercase text-center">Know of new recycling methods and want to get in touch?</h3>
               <h5 class="uppercase text-center">Connect below and support a cleaner environment!</h5>
@@ -82,22 +84,36 @@
                   <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
                   <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
                   <textarea rows="5" name="message" class="form-control" id="message" placeholder="Write a message to RecycleM8" required></textarea>
-                  <button type="submit" class="btn btn-secondary center-block">Send Message</button>
+                  <button id="button-a" type="submit" class="btn btn-secondary center-block">Send Message</button>
               </form>
           </div>
+          <div class="col-lg-2"></div>
+      </div>
       </div>
   </section>
     
      
-      <footer class="hero-image footer">
-        <ul class="social-networks">
-          <li ><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook" aria-hidden="true">Facebook</i></a>  </li>
-          <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square" aria-hidden="true">Twitter</i></a></li>
-          <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube-square" aria-hidden="true">Youtube</i></a></li>
-          <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram" aria-hidden="true">Instagram</i></a></li>
-       </ul>
-        <p>This project was made for educational and assement purposes only.</p>
-      </footer>
+  <footer class="hero-image">
+    <ul class="social-networks hero-image">
+      <li ><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a>  </li>
+      <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube-square" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+  </ul>
+  
+   </footer>
+   <script>
+     $('button-a').click(function(){
+       swal({
+         title:"confirm",
+         text:"Are you sure?",
+         buttons: {
+           cancel:true,
+           confirm: "Submit"
+         }
+       })
+     });
+   </script>
       <script src="assets/js/email.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
