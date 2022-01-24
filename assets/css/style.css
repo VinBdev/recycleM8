@@ -154,8 +154,17 @@ a{
    font-weight: bold;
    opacity: 0.9;
    text-decoration: none;
+   padding: 5px 30px;
+   margin: 15px;
  }
+  #button-a{
+    margin-top: 10px;
+  }
 
+  input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 
 /** index page **/
 img, svg {
