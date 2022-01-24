@@ -1,3 +1,10 @@
+body{
+  max-width: 2250px;
+  text-align: center;
+}
+
+/** Index,html**/
+
 /** Navbar **/
 
 .navbar-header{
@@ -30,6 +37,7 @@
   background-color: white;
   opacity: 0.9; 
   padding-top: 10px;  
+  padding-bottom: 10px;
 }
 
 /** Section1 **/
@@ -38,8 +46,16 @@
   background-color: whitesmoke;
   opacity: 0.9; 
   background-blend-mode: color-burn;
+  text-align: center;
 }
 
+p{
+  padding-left:10px ;
+  padding-right: 10px; 
+  padding-bottom: 5px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
 
  /* Footer */
  footer {
@@ -81,6 +97,7 @@ a{
   flex-direction: row;
   flex-wrap: wrap;
   background-color:transparent;
+  font-size: 10;
 }
 
 .location {
@@ -136,6 +153,7 @@ a{
    font-size: 2rem; 
    font-weight: bold;
    opacity: 0.9;
+   text-decoration: none;
  }
 
 
@@ -171,7 +189,4 @@ height:min-content }
   margin-top: 0 ;
   max-width: 70%;
 }
-
-#contact-col{
-  background-color: transparent;
-}
+ 
