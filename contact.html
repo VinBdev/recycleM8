@@ -72,14 +72,14 @@
     </section>
 
     <section class="container-fluid hero-image section 1">
-      <div class="row bg-color-contact container-about">
-        <div class="col-lg-2"></div>
+      <div class="row bg-color-contact">
+        <div class="col-lg-2 contact-col"></div>
         <div class="col-lg-8">
           <div>
-              <h3 class="contact-heading uppercase text-center">Know of new recycling methods and want to get in touch?</h3>
-              <h5 class="uppercase text-center">Connect below and support a cleaner environment!</h5>
+              <h3 class="contact-heading uppercase text-center container-about">Know of new recycling methods and want to get in touch?</h3>
+              <h5 class="uppercase text-center container-about">Connect below and support a cleaner environment!</h5>
           </div>
-          <div class="contact-form">
+          <div class="contact-form container-about">
               <form onsubmit="return sendMail(this).then(reset());">
                   <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
                   <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
@@ -87,8 +87,8 @@
                   <button id="button-a" type="submit" class="btn btn-secondary center-block">Send Message</button>
               </form>
           </div>
-          <div class="col-lg-2"></div>
       </div>
+      <div class="col-lg-2 contact-col"></div>
       </div>
   </section>
     
@@ -102,18 +102,7 @@
   </ul>
   
    </footer>
-   <script>
-     $('button-a').click(function(){
-       swal({
-         title:"confirm",
-         text:"Are you sure?",
-         buttons: {
-           cancel:true,
-           confirm: "Submit"
-         }
-       })
-     });
-   </script>
+   
       <script src="assets/js/email.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">

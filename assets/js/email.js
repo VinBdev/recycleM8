@@ -15,3 +15,14 @@ function sendMail(contactForm) {
     );
     return false;   
 }
+
+$('button-a').click(function(){
+    swal({
+      title:"confirm",
+      text:"Are you sure?",
+      buttons: {
+        cancel:true,
+        confirm: "Submit"
+      }
+    })
+  });

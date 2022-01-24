@@ -171,3 +171,7 @@ height:min-content }
   margin-top: 0 ;
   max-width: 70%;
 }
+
+#contact-col{
+  background-color: transparent;
+}
