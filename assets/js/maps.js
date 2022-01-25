@@ -86,7 +86,7 @@ const locationsContainer = document.getElementById("locations-container");
                 content: infoWindowContentString
             });
 
-            marker.addListener("click", () {
+            marker.addListener("click", () => {
                 infoWindow.open({
                     anchor: marker,
                     map: map
@@ -123,8 +123,8 @@ const locationsContainer = document.getElementById("locations-container");
         let place = places[placeId];
         location.href = "#map";
 
-        map.setCenter(place.coordinates);
-        map.setZoom(17);
+        map.setCenter(place.coordinates)
+        map.setZoom(17)
     }
 
     showLocations();
