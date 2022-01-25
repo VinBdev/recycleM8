@@ -7,26 +7,31 @@ function sendMail(contactForm) {
     .then(
         function(response) {
             console.log("SUCCESS", response);
-            if(document.getElementById('button').clicked == true)
-{
-    function sweetAlertClick(){
-        Swal.fire({
-            title: 'Your message was successful!',
-            showClass: {
-              popup: 'animate__animated animate__fadeInDown'
-            },
-            hideClass: {
-              popup: 'animate__animated animate__fadeOutUp'
-            }
-          });
-    }
-}
-        
+            $('button-a').click(function(){
+                swal({
+                  title:"confirm",
+                  text:"Are you sure?",
+                  buttons: {
+                    cancel:true,
+                    confirm: "Submit"
+                  }
+                });
+      });
+
         },
         function(error) {
             console.log("FAILED", error);
         }
     );
-    return false;   
-};
+       ); $('button-a').click(function(){
+            swal({
+              title:"Error",
+              text:"Please check the information submitted",
+              buttons: {
+                cancel:true, 
+              }
+            });
+          });
 
+    return false;   
+}
