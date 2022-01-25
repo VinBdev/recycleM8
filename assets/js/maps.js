@@ -1,3 +1,5 @@
+/* Setting up places */ 
+
 const places = [
     {
         name: "Northside recycling Ltd",
@@ -41,18 +43,20 @@ const places = [
         coordinates: {lat: 53.38441913987859,  lng: -6.396209535994277 },
         description: "The Coolmine recycling center is a classic example of a paper and plastic based recycling center. There are two very large purple containers at the back side of a car park. This is located in a large residential area with easy access."
     },
-{
+    {
 
-name: "Bottle Recycling Center",
-imageLink: "assets/images/glass-bottle-1.jpg",
-coordinates: {lat:53.31209788670306, lng: -6.2827682652981025 },
-description: "This is glass bottle recycling center located in the center of Terenure, Rathgar and Kimmage. This too contains waste facilitie for green, brown and transparent glass bottles. All waste must be cleaned before using the bins."
-}];
+        name: "Bottle Recycling Center",
+        imageLink: "assets/images/glass-bottle-1.jpg",
+        coordinates: {lat:53.31209788670306, lng: -6.2827682652981025 },
+        description: "This is glass bottle recycling center located in the center of Terenure, Rathgar and Kimmage. This too contains waste facilitie for green, brown and transparent glass bottles. All waste must be cleaned before using the bins."
+    }];
 
 
 let map;
-const locationsContainer = document.getElementById("location-container");
+const locationsContainer = document.getElementById("locations-container");
 
+
+/* Setting up the map and add the markers. */
 
         function initMap() {
           map = new google.maps.Map(document.getElementById('map'), {
@@ -66,36 +70,37 @@ const locationsContainer = document.getElementById("location-container");
                 position: place.coordinates,
                 map: map,
                 title: place.name
-            });
-/*jshint esversion: 6 */
+            }); 
 
-            let infoWindowLocationString =`
+            let infoWindowContentString =`
             <div class="info-window">
                <img src="${place.imageLink}">
                <h1>${place.name}</h1>
                <br>
-               <a href="#locations-${i}">Locations</a>
+               <a href="#location-${i}">Locations</a>
                <span>${place.description}</span>
             </div>
             `;
         
             const infoWindow = new google.maps.InfoWindow({
-                content: infoWindowLocationString
+                content: infoWindowContentString
             });
 
-            marker.addListener("click", () => {
-                infoWindow.open;{
+            marker.addListener("click", () {
+                infoWindow.open({
                     anchor: marker,
-                    map;
-                }
-            });
-        }
-    }
+                    map: map
+             });
+    });
+  }
+}
+
+/* Show various recycle centers in a list below map */
     function showLocations() {
         for (let i = 0; i < places.length; i++) {
             let place = places[i];
             let locationHTML = `
-            <div class="location" id="locations-${i}">
+            <div class="location" id="location-${i}">
                 <h3>${place.name}</h3>
                 <img src="${place.imageLink}">
 
@@ -110,6 +115,9 @@ const locationsContainer = document.getElementById("location-container");
             locationsContainer.innerHTML += locationHTML;
         }
     }
+
+
+/* Given index of place, show in on the map*/
 
     function goToPlaceOnMap(placeId) {
         let place = places[placeId];
