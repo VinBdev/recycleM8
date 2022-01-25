@@ -9,7 +9,17 @@ function sendMail(contactForm) {
             console.log("SUCCESS", response);
             if(document.getElementById('button').clicked == true)
 {
-   alert("button was clicked");
+    function sweetAlertClick(){
+        Swal.fire({
+            title: 'Your message was successful!',
+            showClass: {
+              popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+              popup: 'animate__animated animate__fadeOutUp'
+            }
+          });
+    }
 }
         
         },
@@ -20,14 +30,3 @@ function sendMail(contactForm) {
     return false;   
 };
 
-function sweetAlertClick(){
-    Swal.fire({
-        title: 'Custom animation with Animate.css',
-        showClass: {
-          popup: 'animate__animated animate__fadeInDown'
-        },
-        hideClass: {
-          popup: 'animate__animated animate__fadeOutUp'
-        }
-      });
-}
