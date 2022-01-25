@@ -51,7 +51,7 @@ description: "This is glass bottle recycling center located in the center of Ter
 
 
 let map;
-const locationsContainer = document.getElementById("recycling-container");
+const locationsContainer = document.getElementById("location-container");
 
 
         function initMap() {
@@ -107,7 +107,7 @@ const locationsContainer = document.getElementById("recycling-container");
                 <a onclick="goToPlaceOnMap(${i})">Find on Map</a>
             </div>`;
 
-            recyclingsContainer.innerHTML += locationHTML;
+            locationsContainer.innerHTML += locationHTML;
         }
     }
 
