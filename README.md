@@ -158,10 +158,10 @@ Here is my wireframes for the home, recycle and contact pages of the RecycleM8 s
 * The checkbox functions as a required field in order to ensure less spam mail coming through. I tested each link and the checkbox as part of this process
 
 ### Lighthouse Results
-Perfromance = 94%
-Accessibility = 95%
-Best Practices = 80%
-SEO = 80%
+Perfromance = 97%
+Accessibility = 97%
+Best Practices = 87%
+SEO = 91%
 
 
 ### Deployment
