@@ -14,6 +14,7 @@
             emailjs.init("user_KYznVmNADQLVi9aOddshU");
         })();
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
@@ -80,11 +81,11 @@
               <h5 class="uppercase text-center container-about">Connect below and support a cleaner environment!</h5>
           </div>
           <div class="contact-form container-about">
-              <form onsubmit="return sendMail(this).then(reset());">
+              <form onsubmit="return sendMail(this).then(reset());" >
                   <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
                   <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
                   <textarea rows="5" name="message" class="form-control" id="message" placeholder="Write a message to RecycleM8" required></textarea>
-                  <button onclick="sweetAlertClick()" id="button" type="submit" class="btn btn-secondary center-block">Send Message</button>
+                  <button id="button" type="submit" class="btn btn-secondary center-block">Send Message</button>
               </form>
           </div>
       </div>
@@ -102,7 +103,6 @@
   </ul>
   
    </footer>
-   
       <script src="assets/js/email.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
