@@ -212,7 +212,11 @@ Expected Result: Varios spelling errors amended
 Actual Result: Spelling errors amended
 [View bug commit and fix Here](https://github.com/VinBdev/recycleM8/commit/380457443cfc6eaa2e0fae88802620ac716897b1)
 
-
+#### Validating Code:
+All files were put through the following validators:
+* https://validator.w3.org/nu/#textarea
+* https://jigsaw.w3.org/css-validator/validator
+* https://www.jshint.com/
 
 ### Credits
 #### The Full Stack programme lessons on UX design and Bootstrap.
