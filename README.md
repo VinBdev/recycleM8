@@ -177,6 +177,42 @@ SEO = 91%
 * Scroll back down to the GitHub Pages section to retrieve the link to the deployed website.
 github have also now created their own page for the deployment process as well. Visit Live Site Here
 
+### Bug Fixes:
+The bugs experienced in developing this applicatoin were javascript related
+#### Email JS
+Title: EmailJS bug
+Environment : email.js
+Steps to reproduce a Bug: In order to reproduve this bug, simply remove the CDN link.
+Expected Result: Emails will not be sent
+Actual Result: Emails were not sent 
+Severity/Priority: High priority bug fix as without email being sent the user would be unaware as to whether the message was submitted correctly.
+[View bug commit and fix Here](https://github.com/VinBdev/recycleM8/commit/bf32f13d5f8c4ad86328d151d275b0bd19f7a87b)
+
+Jan 26 - Fixing bug on contact page with email sending
+Jan 24 - Fixed js bug on emails (This was done in error, the attempted fix did not resolve the issue.
+
+#### Google Maps API
+
+Title: Google Maps API
+Environment: maps.js
+Steps to reproduce: Check commit history; change locations-container to location-container
+Expected Result: Google maps will load but the containers will not be linked to map locations
+Actual Result: Maps now link to locations targeted on map.
+[View bug commit and fix Here](https://github.com/VinBdev/recycleM8/commit/40a7ff5a8c06e0911720b51132b328485192c95b)
+
+Jan 25 - Fixed bug on map link + included doc strings
+Jan 24 - Fixed bug on google map api
+
+
+#### Spelling Errors:
+Title: Spelling Errors
+Environment: all .html files
+Steps to reproduce: Check commit history; use an online spell checker and copy each file into the checker.
+Expected Result: Varios spelling errors amended
+Actual Result: Spelling errors amended
+[View bug commit and fix Here](https://github.com/VinBdev/recycleM8/commit/380457443cfc6eaa2e0fae88802620ac716897b1)
+
+
 
 ### Credits
 #### The Full Stack programme lessons on UX design and Bootstrap.
