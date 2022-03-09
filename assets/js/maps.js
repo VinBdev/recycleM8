@@ -123,8 +123,8 @@ const locationsContainer = document.getElementById("locations-container");
         let place = places[placeId];
         location.href = "#map";
 
-        map.setCenter(place.coordinates)
-        map.setZoom(17)
+        map.setCenter(place.coordinates);
+        map.setZoom(17);
     }
 
     showLocations();
